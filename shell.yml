@@ -1,0 +1,7 @@
+name: shell
+parent: default
+
+matches:
+  - trigger: ":21"
+    replace: "2>&1 | grep '<'
+      
