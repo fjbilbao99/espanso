@@ -24,7 +24,7 @@ matches:
     replace: "Let us know if you have further questions in the meantime."
 
   - trigger: "hithere"
-    replace: "Hi there,\nThanks for contacting Cloudflare Support."
+    replace: "Hi there,\n\nThanks for contacting Cloudflare Support.\n"
       
   - trigger: "iam"
     replace: "I am sorry to hear that you are having issues at your end. "
