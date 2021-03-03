@@ -34,5 +34,9 @@ matches:
     
   - trigger: "cfee"
     replace: "Thanks for your patience on this matter.\nOur Engineering team is still reviewing this issue.\nWe will provide you an update here once we get more feedback."    
-
-
+    
+  - trigger: "cfent"
+    replace: "Thanks for contacting Cloudflare Enterprise Support. My name is Xabier and I will be looking into this ticket for you.\n\n"
+  
+  - trigger: "cfhar"
+    replace: "Could you please send us a [HAR file](https://support.cloudflare.com/hc/en-us/articles/203118044-How-do-I-generate-a-HAR-file-) demonstrating the issue?" 
