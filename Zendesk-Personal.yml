@@ -15,7 +15,7 @@ matches:
     replace: "For now, I will mark this ticket as solved. Please, feel free to reply back if you need any further assistance here. "
   
   - trigger: "2iam"
-    replace: "I am sorry to hear that you are still having issues at your end."
+    replace: "I am sorry to hear that you are still having issues at your end.\n\n"
   
   - trigger: "cfip"
     replace: "We do recommend whitelisting only Cloudflare IPs and block all others at your origin server. You can find a list of all IPs here - https://www.cloudflare.com/ips/."
@@ -24,7 +24,7 @@ matches:
     replace: "Let us know if you have further questions in the meantime."
 
   - trigger: "hithere"
-    replace: "Hi there,\n\nThanks for contacting Cloudflare Support.\n"
+    replace: "Hi there,\n\nThanks for contacting Cloudflare Support.\n\n"
       
   - trigger: "iam"
     replace: "I am sorry to hear that you are having issues at your end. "
