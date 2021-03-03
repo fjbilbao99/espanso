@@ -2,54 +2,32 @@ name: zendesk-personal
 parent: default
 
 matches:
-  - trigger: "cftest"
-    replace: |
-      Hi there,
-      
   - trigger: "cfimg"
-    replace: |
-      ![](xxximgxxx)   
+    replace: "![](xxximgxxx)"
       
   - trigger: "cfacc"
-    replace: |      
-      You can use the [IP Access Rules](https://support.cloudflare.com/hc/en-us/articles/217074967-How-do-I-control-IP-access-to-my-site-), block/challenge - IP address/ranges, and Countries.
+    replace: "You can use the [IP Access Rules](https://support.cloudflare.com/hc/en-us/articles/217074967-How-do-I-control-IP-access-to-my-site-), block/challenge - IP address/ranges, and Countries."
  
   - trigger: "`"
-    replace: |
-      ```
-  - trigger: "cfclose"
-    replace: |
-      For now, I will mark this ticket as solved. Please, feel free to reply back if you need any further assistance here.  
+    replace: "```"
+    
+  - trigger: "cf2clos"
+    replace: "For now, I will mark this ticket as solved. Please, feel free to reply back if you need any further assistance here. "
   
   - trigger: "2iam"
-    replace: |
-      I am sorry to hear that you are still having issues at your end. 
-
-  - trigger: "cfee"
-    replace: |
-      I am escalating this to our Escalation Engineer team. 
-      
-      We will provide you an update once we have any feedback here. 
-      
-      Once again, thanks for your patience in this matter. 
-
+    replace: "I am sorry to hear that you are still having issues at your end."
+  
   - trigger: "cfip"
-    replace: |
-      We do recommend whitelisting only Cloudflare IPs and block all others at your origin server. You can find a list of all IPs here - https://www.cloudflare.com/ips/.
+    replace: "We do recommend whitelisting only Cloudflare IPs and block all others at your origin server. You can find a list of all IPs here - https://www.cloudflare.com/ips/."
 
   - trigger: "cfpen"
-    replace: |
-      Let us know if you have further questions in the meantime.
+    replace: "Let us know if you have further questions in the meantime."
 
   - trigger: "hithere"
-    replace: |
-      Hi there,
-      
-      Thanks for contacting Cloudflare Support.
+    replace: "Hi there,\nThanks for contacting Cloudflare Support."
       
   - trigger: "iam"
-    replace: |
-      I am sorry to hear that you are having issues at your end. 
+    replace: "I am sorry to hear that you are having issues at your end. "
       
   - trigger: "cfatt"
     replace: |
