@@ -11,5 +11,5 @@ matches:
     replace: "version1" 
   - trigger: "curll"
     replace: "curl -svo /dev/null https://"  
-  - trigger: ":2update"
+  - trigger: ":up2"
     replace: "rm -rf /tmp/2; git clone https://github.com/fjbilbao99/espansopri /tmp/2 ; cp /tmp/2/* /Users/xabi/Library/Preferences/espanso/user/"   
