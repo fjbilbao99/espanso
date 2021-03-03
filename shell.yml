@@ -8,4 +8,6 @@ matches:
   - trigger: ":update"
     replace: "espanso stop; rm -rf /Users/xabi/Library/Preferences/espanso/user/ ;git clone https://github.com/fjbilbao99/espanso /Users/xabi/Library/Preferences/espanso/user/; espanso start"
   - trigger: ":v"
-    replace: "version1"    
+    replace: "version1" 
+  - trigger: ":curll"
+    replace: "curl -svo /dev/null https://"    
