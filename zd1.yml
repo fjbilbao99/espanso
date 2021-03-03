@@ -1,0 +1,108 @@
+name: zendesk
+parent: default
+
+matches:
+  - trigger: "cftest"
+    replace: |
+      Hi there,
+      
+  - trigger: "cfimg"
+    replace: |
+      ![](xxximgxxx)   
+      
+  - trigger: "cfacc"
+    replace: |      
+      You can use the [IP Access Rules](https://support.cloudflare.com/hc/en-us/articles/217074967-How-do-I-control-IP-access-to-my-site-), block/challenge - IP address/ranges, and Countries.
+ 
+  - trigger: "`"
+    replace: |
+      ```
+  - trigger: "cfclose"
+    replace: |
+      For now, I will mark this ticket as solved. Please, feel free to reply back if you need any further assistance here.  
+  
+  - trigger: "2iam"
+    replace: |
+      I am sorry to hear that you are still having issues at your end. 
+
+  - trigger: "cfee"
+    replace: |
+      I am escalating this to our Escalation Engineer team. 
+      
+      We will provide you an update once we have any feedback here. 
+      
+      Once again, thanks for your patience in this matter. 
+
+  - trigger: "cfip"
+    replace: |
+      We do recommend whitelisting only Cloudflare IPs and block all others at your origin server. You can find a list of all IPs here - https://www.cloudflare.com/ips/.
+
+  - trigger: "cfpen"
+    replace: |
+      Let us know if you have further questions in the meantime.
+
+  - trigger: "hithere"
+    replace: |
+      Hi there,
+      
+      Thanks for contacting Cloudflare Support.
+      
+  - trigger: "iam"
+    replace: |
+      I am sorry to hear that you are having issues at your end. 
+      
+  - trigger: "cfatt"
+    replace: |
+      Hi there,
+      
+      Thank you for contacting Cloudflare Support. My name is Xabier and I will be taking a look at this ticket for you. Sorry to hear that you experienced an attack against your website.
+      
+      I put together a comparison from last weeks "normal" traffic (right-hand side) with today's attack traffic you experienced (left-hand side).
+      
+      ![](xxximgxxx)
+      
+      We do recommend whitelisting only Cloudflare IPs and block all others at your origin server. You can find a list of all IPs here - https://www.cloudflare.com/ips/.
+
+      Here are the logs of what we are seeing on our end.
+
+      **Top ASN**
+
+      ```
+      ASN     max     avg     total
+
+
+      ```
+      
+      **Top Countries**
+      
+      ```
+      Countries   max     avg     total
+      
+      
+      ```
+      
+      **Top Requests**
+      
+      ```
+      Requests    max     avg     total
+      
+      
+      ```
+      
+      **Top Agents**
+      
+      ```
+      Agents  max     avg     total
+      
+      ```
+      
+      You can use this information to help mitigate the attack. You can use the [IP Access Rules](https://support.cloudflare.com/hc/en-us/articles/217074967-How-do-I-control-IP-access-to-my-site-), block/challenge - IP address/ranges, and Countries.
+      
+      You can block/challenge the top [User Agents](https://support.cloudflare.com/hc/en-us/articles/115001856951-How-do-I-block-malicious-User-Agents-with-Cloudflare-) by using User Agent Blocking.
+      
+      Finally [Firewall Rules](https://developers.cloudflare.com/firewall/cf-firewall-rules/fields-and-expressions/) is a new feature that is very helpful to string multiple rules into one.
+      
+      See [Best Practices: DDoS preventative measures](https://support.cloudflare.com/hc/en-us/articles/200170166-Best-Practices-DDoS-preventative-measures?source=search)
+      
+      Please let us know if you have any further questions or issues by replying to this e-mail or ticket.
+      
