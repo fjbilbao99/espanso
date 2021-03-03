@@ -4,4 +4,7 @@ parent: default
 matches:
   - trigger: ":21"
     replace: "2>&1 | grep '<'"
-      
+    
+  - trigger: ":update"
+    replace: "espanso stop; rm -rf /Users/xabi/Library/Preferences/espanso/user/ ;git clone https://github.com/fjbilbao99/espanso /Users/xabi/Library/Preferences/espanso/user/; espanso start"
+    
