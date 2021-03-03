@@ -1,1 +1,38 @@
-"cf1016": "[Origin 1016 DNS errors](https://support.cloudflare.com/hc/en-us/articles/360029779472#error1016)",
+name: zendesktemplate
+parent: default
+
+matches:
+  - trigger: "cf1016"
+    replace: "[Origin 1016 DNS errors](https://support.cloudflare.com/hc/en-us/articles/360029779472#error1016)"
+
+  - trigger: "cf502"
+    replace: "[Troubleshooting Cloudflare 5XX errors](https://support.cloudflare.com/hc/en-us/articles/115003011431-Troubleshooting-Cloudflare-5XX-errors)"    
+    
+  - trigger: "cf520"
+    replace: "**Error 520** is essentially a catch-all response when something unexpected happens or when the origin server incorrectly interprets or does not tolerate a request due to a protocol violation or an empty response:\n[Troubleshooting Cloudflare 5XX errors](https://support.cloudflare.com/hc/en-us/articles/115003011431-Troubleshooting-Cloudflare-5XX-errors)"
+      
+  - trigger: "cf521"
+    replace: "**Error 521** occurs because the origin web server refuses a connection from Cloudflare. More specifically, Cloudflare tried to connect to your origin server on port 80 or 443 but received a connection refused error:\n[Troubleshooting Cloudflare 5XX errors](https://support.cloudflare.com/hc/en-us/articles/115003011431-Troubleshooting-Cloudflare-5XX-errors)"
+    
+  - trigger: "cf522"
+    replace: "**Error 522** indicates that Cloudflare is unable to reach the origin web server and the request times out:\n[Troubleshooting Cloudflare 5XX errors](https://support.cloudflare.com/hc/en-us/articles/115003011431-Troubleshooting-Cloudflare-5XX-errors)"    
+
+  - trigger: "cf524"
+    replace: "**Error 524** error indicates that Cloudflare made a successful TCP connection to the origin web server, but the origin did not reply with an HTTP response before the connection timed out. Typically, Cloudflare waits 100 seconds for an HTTP response. If the origin doesn't respond in that time, Cloudflare closes the connection and serves Error 524:\n[Troubleshooting Cloudflare 5XX errors](https://support.cloudflare.com/hc/en-us/articles/115003011431-Troubleshooting-Cloudflare-5XX errors)"
+    
+  - trigger: "cf525"
+    replace: "**Error 525** indicates that the SSL handshake between Cloudflare and the origin web server failed. This only occurs when the domain is using Cloudflare Full or Full (Strict) SSL mode:\n[Troubleshooting Cloudflare 5XX errors](https://support.cloudflare.com/hc/en-us/articles/115003011431-Troubleshooting-Cloudflare-5XX-errors)"
+    
+  - trigger: "cfchat"
+    replace: "As just discussed in the chat, this support ticket #XXXXXX has been created."
+    
+  - trigger: "cfclo"
+    replace: "I will mark this as solved then, but do let us know if you have any further questions or issues by replying to this e-mail or ticket."
+ 
+  - trigger: "cflog"
+    replace: "**[Cloudflare Logs](https://developers.cloudflare.com/logs/about/)**"
+    
+  - trigger: "cfee"
+    replace: "Thanks for your patience on this matter.\nOur Engineering team is still reviewing this issue.\nWe will provide you an update here once we get more feedback."    
+
+
