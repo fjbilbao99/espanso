@@ -41,7 +41,7 @@ matches:
   - trigger: "cfhar"
     replace: "Could you please send us a [HAR file](https://support.cloudflare.com/hc/en-us/articles/203118044-How-do-I-generate-a-HAR-file-) demonstrating the issue?" 
   - trigger: "cfadios"
-    replace: "Procedo a marcar esta incidencia como resuelta, no obstante si tienes alguna duda al respecto no dudes en contactarnos respondiendo a este email o a través de nuestro portal.\n\nMuchas gracias por contactar Cloudflare.",
+    replace: "Procedo a marcar esta incidencia como resuelta, no obstante si tienes alguna duda al respecto no dudes en contactarnos respondiendo a este email o a través de nuestro portal.\n\nMuchas gracias por contactar Cloudflare."
   - trigger: "cfread"
     replace: "I am not permitted to make any changes in your account. Cloudflare is a self service platform, we are just here in an advisory capacity and to assist with any errors you may see."
   - trigger: "cfback"
