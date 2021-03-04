@@ -62,4 +62,5 @@ matches:
     replace: "No problem, glad to hear this is now resolved.\n\nI will then close this request for now, however if you have any more questions, simply reply to this email and we will be happy to help.\n\nBest regards,"
   - trigger: "cfgrey"
     replace: "Beside most A, AAAA, and CNAME records in the Cloudflare DNS app are the following proxy options:\n\n* An orange-cloud icon proxies traffic for the subdomain through Cloudflare. \n* A gray-cloud icon does not proxy traffic for the subdomain through Cloudflare.\n\n\nMore information:\n\n- [Understand how Cloudflare works with orange-clouded DNS records](https://support.cloudflare.com/hc/articles/205177068).\n- [Identifying subdomains compatible with Cloudflare's proxy\n](https:support.cloudflare.com/hc/en-us/articles/200169626).\n- [Cloudflare DNS FAQ](https://support.cloudflare.com/hc/en-us/articles/360017421192-Cloudflare-DNS-FAQ?source=search)."
-          
+  - trigger: "cfwork"
+    replace: "[Cloudflare Workers ](https://support.cloudflare.com/hc/en-us/articles/360001069212-Where-can-I-find-documentation-regarding-Cloudflare-Workers-?source=search)"
