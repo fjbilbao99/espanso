@@ -10,7 +10,9 @@ matches:
  
   - trigger: "`"
     replace: "```"
-    
+  - trigger: "cfino"
+    replace: "In order to better assist you with the problem you are experiencing, we will need some additional information from you."    
+    In order to better assist you with the problem you are experiencing, we will need some additional information from you. 
   - trigger: "cf2clos"
     replace: "For now, I will mark this ticket as solved. Please, feel free to reply back if you need any further assistance here. "
   
