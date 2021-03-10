@@ -8,7 +8,7 @@ matches:
     replace: "Is there anyting else I can do for you?\n\n"      
   - trigger: "cfacc"
     replace: "You can use the [IP Access Rules](https://support.cloudflare.com/hc/en-us/articles/217074967-How-do-I-control-IP-access-to-my-site-), block/challenge - IP address/ranges, and Countries."
-   - trigger: "cfsumm"
+  - trigger: "cfsumm"
     replace: "**Summary**\n\nCustomer looking to resolve:\n\n" 
   - trigger: "`"
     replace: "```"
