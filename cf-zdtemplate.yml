@@ -24,7 +24,7 @@ matches:
     replace: "**Error 525** indicates that the SSL handshake between Cloudflare and the origin web server failed. This only occurs when the domain is using Cloudflare Full or Full (Strict) SSL mode:\n[Troubleshooting Cloudflare 5XX errors](https://support.cloudflare.com/hc/en-us/articles/115003011431-Troubleshooting-Cloudflare-5XX-errors)"
     
   - trigger: "cfchat"
-    replace: "As just discussed in the chat, this support ticket #XXXXXX has been created."
+    replace: "Hi there,\n\nThanks for contacting Cloudflare Support. I am sorry to hear that you are having issues at your end.\n\nAs just discussed in the chat, this support ticket #XXXXXX has been created."
     
   - trigger: "cfclo"
     replace: "I will mark this as solved then, but do let us know if you have any further questions or issues by replying to this e-mail or ticket."
