@@ -16,8 +16,8 @@ matches:
     replace: "In order to better assist you with the problem you are experiencing, we will need some additional information from you."    
   - trigger: "cf2clos"
     replace: "For now, I will mark this ticket as solved. Please, feel free to reply back if you need any further assistance here. "
-  - trigger: "cfaip"
-    replace: "**I can see that I am able to access to your site bypassing Cloudflare.**\n\n```\n\n\n```\n\nThis is a high risk issue. All traffic going to the origin bypassing Cloudflare will not be analysed by our system. Meaning, **any rules that you have set up on Cloudflare to protect your site will not apply\n\n" 
+  - trigger: "cf2ip"
+    replace: "**I can see that I am able to access to your site bypassing Cloudflare.**\n\n```\n\n\n```\n\nThis is a high risk issue. All traffic going to the origin bypassing Cloudflare will not be analysed by our system. Meaning, **any rules that you have set up on Cloudflare to protect your site will not apply**.\n\n" 
   - trigger: "2iam"
     replace: "I am sorry to hear that you are still having issues at your end.\n\n"
   
