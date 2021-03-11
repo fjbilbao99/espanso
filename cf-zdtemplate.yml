@@ -27,7 +27,7 @@ matches:
     replace: "Hi there,\n\nThanks for contacting Cloudflare Support. I am sorry to hear that you are having issues at your end.\n\nAs just discussed in the chat, this support ticket #XXXXXX has been created.\n\nWe are looking at your enquiry now, and we will provide an update as soon as possible.\n\nLet us know if you have further questions in the meantime."
   - trigger: "weare"
     replace: "We are looking at your enquiry now, and we will provide an update as soon as possible.\n\nLet us know if you have further questions in the meantime."   
-  - trigger: "cfclo"
+  - trigger: "cfclose"
     replace: "I will mark this as solved then, but do let us know if you have any further questions or issues by replying to this e-mail or ticket."
  
   - trigger: "cflog"
