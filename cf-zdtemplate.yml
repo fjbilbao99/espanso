@@ -53,7 +53,7 @@ matches:
     replace: "Hi there,\n\nThank you for chatting with us today this support ticket #2011023 has been created.\n\nAs discussed in the chat,\n\nWe're looking at your enquiry, and we will update you as soon as this work has been completed."
   - trigger: "cfcname"
     replace: "[CNAME Set Up](https://support.cloudflare.com/hc/en-us/articles/360020615111-Configuring-a-CNAME-setup)"
-  - trigger: "cfdash"
+  - trigger: "cf2dash"
     replace: "Cloudflare Dashboard -> Support -> Help Center -> Click on your name or \"sign-in\" on the top right corner -> My activities & Requests"
   - trigger: "cfl2"
     replace: "Sorry for problems you faced here. For now, I will mark this as solved, but let us know if you have further questions"
