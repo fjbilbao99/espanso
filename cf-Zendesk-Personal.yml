@@ -4,6 +4,8 @@ parent: default
 matches:
   - trigger: "cfimg"
     replace: "![](xxximgxxx)"
+  - trigger: "cfdash"
+    replace: "On your Cloudflare dashboard:\n\n1.View open support tickets\n2.Log in to your Cloudflare account.\n3.Select Help Center from Support dropdown.\n4.Click Sign In if it appears in the top-right corner; otherwise, click on your name or profile picture.\n5.Click My Activities & Requests.\n\nFull information: https://support.cloudflare.com/hc/en-us/articles/200172476-Contacting-Cloudflare-Support"   
   - trigger: "isthere"
     replace: "Is there anyting else I can do for you?\n\n"      
   - trigger: "cfacc"
