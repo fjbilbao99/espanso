@@ -12,8 +12,6 @@ matches:
     replace: "You can use the [IP Access Rules](https://support.cloudflare.com/hc/en-us/articles/217074967-How-do-I-control-IP-access-to-my-site-), block/challenge - IP address/ranges, and Countries."
   - trigger: "cfsumm"
     replace: "**Summary**\n\nCustomer looking to resolve:\n\n" 
-  - trigger: "`"
-    replace: "```"
   - trigger: "cfino"
     replace: "In order to better assist you with the problem you are experiencing, we will need some additional information from you."    
   - trigger: "cf2clos"
