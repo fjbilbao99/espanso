@@ -3,17 +3,16 @@ parent: default
 
 matches:
   - trigger: ":21"
-    replace: "2>&1 | grep '<'"
-    
+    replace: "2>&1 | grep '<'"   
   - trigger: ":update"
-    replace: "espanso stop;rm -rf /Users/xabi/Library/Preferences/espanso/user/ ;git clone https://github.com/fjbilbao99/espanso /Users/xabi/Library/Preferences/espanso/user/; cp -r /Users/xabi/Library/Preferences/espanso/espri* /Users/xabi/Library/Preferences/espanso/user/; espanso start"
+    replace: "espanso stop;rm -rf /Users/xab/Library/Preferences/espanso/user/ ;git clone https://github.com/fjbilbao99/espanso /Users/xab/Library/Preferences/espanso/user/; cp -r /Users/xabi/Library/Preferences/espanso/espri* /Users/xabi/Library/Preferences/espanso/user/; espanso start"
   - trigger: ":v"
     replace: "version1" 
   - trigger: "curll"
     replace: "curl -svo /dev/null https://"  
   - trigger: ":2update"
-    replace: "rm -rf /tmp/2; git clone https://github.com/fjbilbao99/espansopri /tmp/2 ; cp /tmp/2/* /Users/xabi/Library/Preferences/espanso/user/"  
-  - trigger: ":well"
+    replace: "rm -rf /tmp/2; git clone https://github.com/fjbilbao99/espansopri /tmp/2 ; cp /tmp/2/* /Users/xai/Library/Preferences/espanso/user/"  
+  - trigger: ":2fa"
     replace: "/.well-known/cf-2fa-verify.txt"     
   - trigger: ":c"
     replace: "python3 conduitmapper.py -g " 
