@@ -15,4 +15,8 @@ matches:
     replace: "rm -rf /tmp/2; git clone https://github.com/fjbilbao99/espansopri /tmp/2 ; cp /tmp/2/* /Users/xabi/Library/Preferences/espanso/user/"  
   - trigger: ":well"
     replace: "/.well-known/cf-2fa-verify.txt"     
-   
+  - trigger: ":c"
+    replace: "python3 conduitmapper.py -g " 
+  - trigger: ":2c"
+    replace: "python3 conduitmapper.py -m " 
+    
