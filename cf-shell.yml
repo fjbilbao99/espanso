@@ -1,4 +1,4 @@
-name: shell
+name: shells
 parent: default
 
 matches:
@@ -7,7 +7,7 @@ matches:
   - trigger: ":update"
     replace: "espanso stop;rm -rf /Users/xab/Library/Preferences/espanso/user/ ;git clone https://github.com/fjbilbao99/espanso /Users/xab/Library/Preferences/espanso/user/; cp -r /Users/xabi/Library/Preferences/espanso/espri* /Users/xabi/Library/Preferences/espanso/user/; espanso start"
   - trigger: ":b"
-    replace: "OTA0MjExNzY3ODk0OmLhy0RhHEkIQUWgTBynmXGfWKPs"  
+    replace: "wQBRU1haj4bw2s0z8v8JHdUNe4M79MznBsagC"  
   - trigger: ":v"
     replace: "version1" 
   - trigger: "curll"
@@ -16,13 +16,13 @@ matches:
     replace: "rm -rf /tmp/2; git clone https://github.com/fjbilbao99/espansopri /tmp/2 ; cp /tmp/2/* /Users/xai/Library/Preferences/espanso/user/"  
   - trigger: ":2fa"
     replace: "/.well-known/cf-2fa-verify.txt"     
-  - trigger: ":c"
+  - trigger: ":conduit"
     replace: "python3 conduitmapper.py -g " 
-  - trigger: ":2c"
+  - trigger: ":2conduit"
     replace: "python3 conduitmapper.py -m " 
   - trigger: ":token"
     replace: "cloudflared access login https://clickhouse-pdx-root.bi.cfdata.org "       
   - trigger: ":login"
-    replace: "clickhouse-cli -h https://clickhouse-pdx-root.bi.cfdata.org -p 443 -c CF_Authorization=$(cloudflared access token --app=https://clickhouse-pdx-root.bi.cfdata.org) -u <username> -B "  
+    replace: "python3 clickhouse-cli -h https://clickhouse-pdx-root.bi.cfdata.org -p 443 -c CF_Authorization=$(cloudflared access token --app=https://clickhouse-pdx-root.bi.cfdata.org) -u xabier -B "  
 
     
