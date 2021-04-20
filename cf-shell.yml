@@ -6,6 +6,8 @@ matches:
     replace: "2>&1 | grep '<'"   
   - trigger: ":update"
     replace: "espanso stop;rm -rf /Users/xab/Library/Preferences/espanso/user/ ;git clone https://github.com/fjbilbao99/espanso /Users/xab/Library/Preferences/espanso/user/; cp -r /Users/xabi/Library/Preferences/espanso/espri* /Users/xabi/Library/Preferences/espanso/user/; espanso start"
+  - trigger: ":b"
+    replace: "OTA0MjExNzY3ODk0OmLhy0RhHEkIQUWgTBynmXGfWKPs"  
   - trigger: ":v"
     replace: "version1" 
   - trigger: "curll"
@@ -18,4 +20,11 @@ matches:
     replace: "python3 conduitmapper.py -g " 
   - trigger: ":2c"
     replace: "python3 conduitmapper.py -m " 
+  - trigger: ":token"
+    replace: "cloudflared access login https://clickhouse-pdx-root.bi.cfdata.org "     
+  - trigger: ":token"
+    replace: "cloudflared access login https://clickhouse-pdx-root.bi.cfdata.org "     
+  - trigger: ":login"
+    replace: "clickhouse-cli -h https://clickhouse-pdx-root.bi.cfdata.org -p 443 -c CF_Authorization=$(cloudflared access token --app=https://clickhouse-pdx-root.bi.cfdata.org) -u <username> -B "  
+
     
