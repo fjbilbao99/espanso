@@ -21,9 +21,7 @@ matches:
   - trigger: ":2c"
     replace: "python3 conduitmapper.py -m " 
   - trigger: ":token"
-    replace: "cloudflared access login https://clickhouse-pdx-root.bi.cfdata.org "     
-  - trigger: ":token"
-    replace: "cloudflared access login https://clickhouse-pdx-root.bi.cfdata.org "     
+    replace: "cloudflared access login https://clickhouse-pdx-root.bi.cfdata.org "       
   - trigger: ":login"
     replace: "clickhouse-cli -h https://clickhouse-pdx-root.bi.cfdata.org -p 443 -c CF_Authorization=$(cloudflared access token --app=https://clickhouse-pdx-root.bi.cfdata.org) -u <username> -B "  
 
