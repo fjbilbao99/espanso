@@ -20,7 +20,9 @@ matches:
     replace: "**I can see that I am able to access to your site bypassing Cloudflare.**\n\n```\n\n\n```\n\nThis is a high risk issue. All traffic going to the origin bypassing Cloudflare will not be analysed by our system. Meaning, **any rules that you have set up on Cloudflare to protect your site will not apply**.\n\n" 
   - trigger: "2iam"
     replace: "I am sorry to hear that you are still having issues at your end.\n\n"
-  
+  - trigger: "cfwill"
+    replace: "I'll follow up on the ticket now so you should see a reply shortly."
+
   - trigger: "cfip"
     replace: "We do recommend whitelisting only Cloudflare IPs and block all others at your origin server. You can find a list of all IPs here - https://www.cloudflare.com/ips/."
 
