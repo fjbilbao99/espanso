@@ -1,2 +1,5 @@
 Location for Espanso is 
  ln -s /Users/xabier/Library/Preferences/espanso/user espanso
+
+
+git clone https://github.com/fjbilbao99/espanso.git
