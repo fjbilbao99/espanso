@@ -43,24 +43,19 @@ matches:
   - trigger: "cf524"
     replace: "**Error 524** error indicates that Cloudflare made a successful TCP connection to the origin web server, but the origin did not reply with an HTTP response before the connection timed out. Typically, Cloudflare waits 100 seconds for an HTTP response. If the origin doesn't respond in that time, Cloudflare closes the connection and serves Error 524:\n[Troubleshooting Cloudflare 5XX errors](https://support.cloudflare.com/hc/en-us/articles/115003011431-Troubleshooting-Cloudflare-5XX errors)"   
   - trigger: "cf525"
-    replace: "**Error 525** indicates that the SSL handshake between Cloudflare and the origin web server failed. This only occurs when the domain is using Cloudflare Full or Full (Strict) SSL mode:\n[Troubleshooting Cloudflare 5XX errors](https://support.cloudflare.com/hc/en-us/articles/115003011431-Troubleshooting-Cloudflare-5XX-errors)"
-    
+    replace: "**Error 525** indicates that the SSL handshake between Cloudflare and the origin web server failed. This only occurs when the domain is using Cloudflare Full or Full (Strict) SSL mode:\n[Troubleshooting Cloudflare 5XX errors](https://support.cloudflare.com/hc/en-us/articles/115003011431-Troubleshooting-Cloudflare-5XX-errors)"  
   - trigger: "cfchat"
     replace: "Hi there,\n\nThanks for contacting Cloudflare Support. I am sorry to hear that you are having issues at your end.\n\nAs just discussed in the chat, this support ticket #XXXXXX has been created.\n\nWe are looking at your enquiry now, and we will provide an update as soon as possible.\n\nLet us know if you have further questions in the meantime."
   - trigger: "weare"
     replace: "We are looking at your enquiry now, and we will provide an update as soon as possible.\n\nLet us know if you have further questions in the meantime."   
   - trigger: "cfclose"
     replace: "I will mark this as solved then, but do let us know if you have any further questions or issues by replying to this e-mail or ticket."
- 
   - trigger: "cflog"
     replace: "**[Cloudflare Logs](https://developers.cloudflare.com/logs/about/)**"
-    
   - trigger: "cfee"
     replace: "Thanks for your patience on this matter.\nOur Engineering team is still reviewing this issue.\nWe will provide you an update here once we get more feedback."    
-    
   - trigger: "cfent"
     replace: "Thanks for contacting Cloudflare Enterprise Support. My name is Xabier and I will be looking into this ticket for you.\n\n"
-  
   - trigger: "cfhar"
     replace: "Could you please send us a [HAR file](https://support.cloudflare.com/hc/en-us/articles/203118044-How-do-I-generate-a-HAR-file-) demonstrating the issue?" 
   - trigger: "cfadios"
@@ -89,13 +84,7 @@ matches:
     replace: "[Cloudflare Workers ](https://support.cloudflare.com/hc/en-us/articles/360001069212-Where-can-I-find-documentation-regarding-Cloudflare-Workers-?source=search)"
   - trigger: "cfgra"
     replace: "[Cloudflare GraphQL](https://developers.cloudflare.com/analytics/graphql-api)"
- 
- 
- 
- 
- 
- 
-  - trigger: "cfatt"
+   - trigger: "cfatt"
     replace: |
       Hi there,
       
