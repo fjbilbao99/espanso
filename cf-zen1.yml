@@ -22,19 +22,79 @@ matches:
     replace: "I am sorry to hear that you are still having issues at your end.\n\n"
   - trigger: "cfwill"
     replace: "I'll follow up on the ticket now so you should see a reply shortly."
-
   - trigger: "cfip"
     replace: "We do recommend whitelisting only Cloudflare IPs and block all others at your origin server. You can find a list of all IPs here - https://www.cloudflare.com/ips/."
-
   - trigger: "cfpen"
     replace: "Let us know if you have further questions in the meantime."
-
   - trigger: "hithere"
-    replace: "Hi there,\n\nThanks for contacting Cloudflare Support.\n\n"
-      
+    replace: "Hi there,\n\nThanks for contacting Cloudflare Support.\n\n"   
   - trigger: "iam"
     replace: "I am sorry to hear that you are having issues at your end. "
-      
+  - trigger: "cf1016"
+    replace: "[Origin 1016 DNS errors](https://support.cloudflare.com/hc/en-us/articles/360029779472#error1016)"
+  - trigger: "cf502"
+    replace: "[Troubleshooting Cloudflare 5XX errors](https://support.cloudflare.com/hc/en-us/articles/115003011431-Troubleshooting-Cloudflare-5XX-errors)"     
+  - trigger: "cf520"
+    replace: "**Error 520** is essentially a catch-all response when something unexpected happens or when the origin server incorrectly interprets or does not tolerate a request due to a protocol violation or an empty response:\n[Troubleshooting Cloudflare 5XX errors](https://support.cloudflare.com/hc/en-us/articles/115003011431-Troubleshooting-Cloudflare-5XX-errors)"
+   - trigger: "cf521"
+    replace: "**Error 521** occurs because the origin web server refuses a connection from Cloudflare. More specifically, Cloudflare tried to connect to your origin server on port 80 or 443 but received a connection refused error:\n[Troubleshooting Cloudflare 5XX errors](https://support.cloudflare.com/hc/en-us/articles/115003011431-Troubleshooting-Cloudflare-5XX-errors)"   
+  - trigger: "cf522"
+    replace: "**Error 522** indicates that Cloudflare is unable to reach the origin web server and the request times out:\n[Troubleshooting Cloudflare 5XX errors](https://support.cloudflare.com/hc/en-us/articles/115003011431-Troubleshooting-Cloudflare-5XX-errors)"    
+  - trigger: "cf524"
+    replace: "**Error 524** error indicates that Cloudflare made a successful TCP connection to the origin web server, but the origin did not reply with an HTTP response before the connection timed out. Typically, Cloudflare waits 100 seconds for an HTTP response. If the origin doesn't respond in that time, Cloudflare closes the connection and serves Error 524:\n[Troubleshooting Cloudflare 5XX errors](https://support.cloudflare.com/hc/en-us/articles/115003011431-Troubleshooting-Cloudflare-5XX errors)"   
+  - trigger: "cf525"
+    replace: "**Error 525** indicates that the SSL handshake between Cloudflare and the origin web server failed. This only occurs when the domain is using Cloudflare Full or Full (Strict) SSL mode:\n[Troubleshooting Cloudflare 5XX errors](https://support.cloudflare.com/hc/en-us/articles/115003011431-Troubleshooting-Cloudflare-5XX-errors)"
+    
+  - trigger: "cfchat"
+    replace: "Hi there,\n\nThanks for contacting Cloudflare Support. I am sorry to hear that you are having issues at your end.\n\nAs just discussed in the chat, this support ticket #XXXXXX has been created.\n\nWe are looking at your enquiry now, and we will provide an update as soon as possible.\n\nLet us know if you have further questions in the meantime."
+  - trigger: "weare"
+    replace: "We are looking at your enquiry now, and we will provide an update as soon as possible.\n\nLet us know if you have further questions in the meantime."   
+  - trigger: "cfclose"
+    replace: "I will mark this as solved then, but do let us know if you have any further questions or issues by replying to this e-mail or ticket."
+ 
+  - trigger: "cflog"
+    replace: "**[Cloudflare Logs](https://developers.cloudflare.com/logs/about/)**"
+    
+  - trigger: "cfee"
+    replace: "Thanks for your patience on this matter.\nOur Engineering team is still reviewing this issue.\nWe will provide you an update here once we get more feedback."    
+    
+  - trigger: "cfent"
+    replace: "Thanks for contacting Cloudflare Enterprise Support. My name is Xabier and I will be looking into this ticket for you.\n\n"
+  
+  - trigger: "cfhar"
+    replace: "Could you please send us a [HAR file](https://support.cloudflare.com/hc/en-us/articles/203118044-How-do-I-generate-a-HAR-file-) demonstrating the issue?" 
+  - trigger: "cfadios"
+    replace: "Procedo a marcar esta incidencia como resuelta, no obstante si tienes alguna duda al respecto no dudes en contactarnos respondiendo a este email o a través de nuestro portal.\n\nMuchas gracias por contactar Cloudflare."
+  - trigger: "cfread"
+    replace: "I am not permitted to make any changes in your account. Cloudflare is a self service platform, we are just here in an advisory capacity and to assist with any errors you may see."
+  - trigger: "cfback"
+    replace: "Hello,\n\nThank you for writing back. I am sorry you are still experiencing difficulties."
+  - trigger: "cfcdn"
+    replace: "https://cloudflare.com/cdn-cgi/trace"
+  - trigger: "cfchatti"
+    replace: "Hi there,\n\nThank you for chatting with us today this support ticket #2011023 has been created.\n\nAs discussed in the chat,\n\nWe're looking at your enquiry, and we will update you as soon as this work has been completed."
+  - trigger: "cfcname"
+    replace: "[CNAME Set Up](https://support.cloudflare.com/hc/en-us/articles/360020615111-Configuring-a-CNAME-setup)"
+  - trigger: "cf2dash"
+    replace: "Cloudflare Dashboard -> Support -> Help Center -> Click on your name or \"sign-in\" on the top right corner -> My activities & Requests"
+  - trigger: "cfl2"
+    replace: "Sorry for problems you faced here. For now, I will mark this as solved, but let us know if you have further questions"
+  - trigger: "cfl3"
+    replace: "I have escalated your enquiry now. We will provide you an update here once we get more feedback.\n\nThanks for your patience on this matter.\n\nLet us know if you have further questions in the meantime."
+  - trigger: "cfnp"
+    replace: "No problem, glad to hear this is now resolved.\n\nI will then close this request for now, however if you have any more questions, simply reply to this email and we will be happy to help.\n\nBest regards,"
+  - trigger: "cfgrey"
+    replace: "Beside most A, AAAA, and CNAME records in the Cloudflare DNS app are the following proxy options:\n\n* An orange-cloud icon proxies traffic for the subdomain through Cloudflare. \n* A gray-cloud icon does not proxy traffic for the subdomain through Cloudflare.\n\n\nMore information:\n\n- [Understand how Cloudflare works with orange-clouded DNS records](https://support.cloudflare.com/hc/articles/205177068).\n- [Identifying subdomains compatible with Cloudflare's proxy\n](https:support.cloudflare.com/hc/en-us/articles/200169626).\n- [Cloudflare DNS FAQ](https://support.cloudflare.com/hc/en-us/articles/360017421192-Cloudflare-DNS-FAQ?source=search)."
+  - trigger: "cfwork"
+    replace: "[Cloudflare Workers ](https://support.cloudflare.com/hc/en-us/articles/360001069212-Where-can-I-find-documentation-regarding-Cloudflare-Workers-?source=search)"
+  - trigger: "cfgra"
+    replace: "[Cloudflare GraphQL](https://developers.cloudflare.com/analytics/graphql-api)"
+ 
+ 
+ 
+ 
+ 
+ 
   - trigger: "cfatt"
     replace: |
       Hi there,
