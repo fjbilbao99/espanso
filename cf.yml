@@ -36,7 +36,7 @@ matches:
     replace: "[Troubleshooting Cloudflare 5XX errors](https://support.cloudflare.com/hc/en-us/articles/115003011431-Troubleshooting-Cloudflare-5XX-errors)"     
   - trigger: "cf520"
     replace: "**Error 520** is essentially a catch-all response when something unexpected happens or when the origin server incorrectly interprets or does not tolerate a request due to a protocol violation or an empty response:\n[Troubleshooting Cloudflare 5XX errors](https://support.cloudflare.com/hc/en-us/articles/115003011431-Troubleshooting-Cloudflare-5XX-errors)"
-   - trigger: "cf521"
+  - trigger: "cf521"
     replace: "**Error 521** occurs because the origin web server refuses a connection from Cloudflare. More specifically, Cloudflare tried to connect to your origin server on port 80 or 443 but received a connection refused error:\n[Troubleshooting Cloudflare 5XX errors](https://support.cloudflare.com/hc/en-us/articles/115003011431-Troubleshooting-Cloudflare-5XX-errors)"   
   - trigger: "cf522"
     replace: "**Error 522** indicates that Cloudflare is unable to reach the origin web server and the request times out:\n[Troubleshooting Cloudflare 5XX errors](https://support.cloudflare.com/hc/en-us/articles/115003011431-Troubleshooting-Cloudflare-5XX-errors)"    
@@ -84,7 +84,7 @@ matches:
     replace: "[Cloudflare Workers ](https://support.cloudflare.com/hc/en-us/articles/360001069212-Where-can-I-find-documentation-regarding-Cloudflare-Workers-?source=search)"
   - trigger: "cfgra"
     replace: "[Cloudflare GraphQL](https://developers.cloudflare.com/analytics/graphql-api)"
-   - trigger: "cfatt"
+  - trigger: "cfatt"
     replace: |
       Hi there,
       
